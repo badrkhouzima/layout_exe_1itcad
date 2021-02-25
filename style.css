@@ -68,8 +68,9 @@
   width: 100%;
   
 }
- .body-content{
-  width: 100% + 0.7rem;
+.content .body-content{
+  width: 100% +1rem;
+  /* + 0.7rem; */
   height: 110px;
   background: blue;
 
@@ -81,8 +82,8 @@
 } 
  
 
-.sidebar {
-  width: 100% ;
+.content  .sidebar {
+  width: 100% +1rem;
   background: red;
   height: 110px;
  
@@ -126,4 +127,11 @@ body {
   border-style: solid;
   border-width: 6px;
   margin-top: 8px;
+}
+
+@media  (max-width: 600px) {
+  
+  .body-content, .content{
+    display: block;
+  }  
 }
